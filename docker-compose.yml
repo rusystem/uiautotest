@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  test:
+    build: .
+    image: uiautotest:latest
+    command: ["mvn", "test", "-Dgroups=authentication,cart"]
